@@ -1,0 +1,13 @@
+{
+  "name": "invoice-gen",
+  "version": "0.2.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check.mjs && node --test scripts/*.test.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

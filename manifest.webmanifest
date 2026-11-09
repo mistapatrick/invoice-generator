@@ -1,0 +1,11 @@
+{
+  "name": "Invoice Gen",
+  "short_name": "Invoice Gen",
+  "description": "Create invoices, pro forma invoices and receipts offline.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f5f8f7",
+  "theme_color": "#123c45",
+  "icons": [{"src":"/icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}
