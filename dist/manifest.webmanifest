@@ -1,7 +1,7 @@
 {
   "name": "Invoice Gen",
   "short_name": "Invoice Gen",
-  "description": "Create invoices, pro forma invoices and receipts offline.",
+  "description": "Create invoices, pro forma invoices and receipts in five languages and twelve currencies.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",

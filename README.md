@@ -76,3 +76,49 @@ See `TEST-RESULTS.md` for the checks that were run and the checks that still req
 6. Export a backup, import it in a separate test browser profile and verify records.
 7. Void a test document and confirm its status changes.
 8. Install the PWA over HTTPS, load it once online, then test opening it offline.
+
+
+## v3.0.0 changes
+
+- Adds WhatsApp feedback to +234 905 390 3530 and email feedback to viborg.outsourcing@gmail.com.
+- Adds an invoice due-date calendar export (`.ics`) with a one-day reminder.
+- Sets the print document title to `Invoice_Gen-DD-MM-YYYY-HH-MM` before opening the browser print dialog. Browser print destinations may override the suggested filename.
+- Updates the app icon to a quill-and-paper mark with a small ink bottle.
+- Explains that file permissions are controlled by the browser and operating system; a website cannot override them.
+- Advances the service-worker cache version and precaches `core.js` to reduce stale-shell and missing-module issues during upgrades.
+
+Deploy this release to a Vercel Preview first. Complete the manual checks in `TEST-RESULTS.md` before promoting it to Production.
+
+
+## Version 3.0.0 international release candidate
+
+- Interface language preferences: English, French, Spanish, Portuguese and Arabic (right-to-left layout for Arabic).
+- Currency preferences: NGN, XOF, GHS, USD, CAD, GBP, EUR, MXN, BRL, AED, AUD and INR.
+- Currency and language are snapshotted onto newly issued documents. Existing documents without a currency field are interpreted as NGN for backward compatibility.
+- Six document layouts: Corporate, Modern minimal, Executive, Creative, Ledger and Editorial. Layout selection changes document structure; all six use the same navy/blue brand palette in this release.
+- CFA selection is West African CFA franc (XOF). Central African CFA franc (XAF) is not included in this requested list.
+
+The language packs cover the main navigation, key document-entry labels, preferences, common dashboard labels and core invoice/receipt print labels. Some secondary helper text, validation notices, sharing messages and browser-generated controls may remain in English. A professional translation review and full linguistic QA are required before commercial distribution.
+
+
+## Compatibility and data handling
+
+- The existing `invoice-gen-data-v2` local-storage key is retained. The application does not clear or migrate the user's existing data on startup.
+- Existing records that predate the currency field continue to display as NGN. New records snapshot the selected currency and language so later preference changes do not rewrite issued documents.
+- This version does not perform foreign-exchange conversion. It changes the denomination and formatting used for the document; users enter amounts in the selected currency.
+- Arabic applies right-to-left page direction and Arabic invoice labels. User-entered names, addresses and line descriptions are not machine-translated.
+
+
+## Business Labs attribution footer
+
+- Every application view includes the footer text “Powered by Business Labs Software and Technology”.
+- The WhatsApp icon opens `https://wa.me/2349053903530` in a new tab or the installed WhatsApp handler.
+- The email icon uses `mailto:businesslabs.tech@gmail.com`, allowing the device's configured email application to open with the recipient prefilled.
+- The footer is hidden in print styles, so it does not appear on customer invoices, pro forma invoices or receipts.
+- The service-worker cache revision is advanced to `v3.0.0-r2` so existing installations request the revised app shell and stylesheet.
+
+## First-run international setup (v3.0.0 onboarding revision)
+
+New installations now open directly to a guided workspace setup screen. The user must first save an application language and default currency, then complete the business or personal sender profile. Document creation is gated until both steps are saved. After preferences are saved, the page scrolls to the sender profile and focuses the display-name field. Once the profile is saved, the app confirms that the workspace is ready and returns the user to the overview.
+
+For backwards compatibility, an installation that already has a saved business name is treated as an existing user and is not forced through the new onboarding flow. The existing `invoice-gen-data-v2` local-storage key and document records are preserved. Clearing local data returns the app to first-run setup. The service-worker cache revision is `invoice-gen-static-v3.0.0-r3`.
