@@ -33,5 +33,5 @@ test('returning users with an existing business profile are not forced through o
 });
 
 test('service worker cache revision changes for the onboarding update', () => {
-  assert.match(sw, /invoice-gen-static-v3\.0\.0-r3/);
+  assert.match(sw, /invoice-gen-static-v3\.0\.0-r4/);
 });

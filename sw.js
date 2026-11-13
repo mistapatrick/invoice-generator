@@ -1,4 +1,4 @@
-const CACHE='invoice-gen-static-v3.0.0-r3';
+const CACHE='invoice-gen-static-v3.0.0-r4';
 const CORE=['/','/index.html','/styles.css','/app.js','/core.js','/manifest.webmanifest','/icon.svg'];
 self.addEventListener('install',event=>event.waitUntil((async()=>{const cache=await caches.open(CACHE);await cache.addAll(CORE);await self.skipWaiting();})()));
 self.addEventListener('activate',event=>event.waitUntil((async()=>{const keys=await caches.keys();await Promise.all(keys.filter(key=>key.startsWith('invoice-gen-static-')&&key!==CACHE).map(key=>caches.delete(key)));await self.clients.claim();})()));

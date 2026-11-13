@@ -92,7 +92,7 @@ test('PDF print title uses Invoice_Gen-DD-MM-YYYY-HH-MM and restores page title'
 test('service worker caches core.js and uses a new versioned cache', async () => {
   const { readFile } = await import('node:fs/promises');
   const sw = await readFile(new URL('../sw.js', import.meta.url), 'utf8');
-  assert.match(sw, /invoice-gen-static-v3\.0\.0-r3/);
+  assert.match(sw, /invoice-gen-static-v3\.0\.0-r4/);
   assert.match(sw, /'\/core\.js'/);
   assert.match(sw, /self\.clients\.claim\(\)/);
 });

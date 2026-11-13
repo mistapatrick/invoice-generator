@@ -23,6 +23,45 @@ Object.assign(UI_TRANSLATIONS.fr,{"Keep business moving.": "Faites avancer votre
 Object.assign(UI_TRANSLATIONS.es,{"Keep business moving.": "Mantén tu negocio en marcha.", "Create clear, professional invoices, pro forma invoices and receipts in minutes.": "Crea facturas, facturas proforma y recibos profesionales en minutos.", "All documents": "Todos los documentos", "Saved on this device": "Guardado en este dispositivo", "Invoices": "Facturas", "Regular invoices": "Facturas ordinarias", "Price quotations": "Cotizaciones", "Payment records": "Registros de pago", "Recent documents": "Documentos recientes", "View all documents →": "Ver todos los documentos →", "Document type": "Tipo de documento", "Choose what you want to issue.": "Elige el documento que deseas emitir.", "Customer details": "Datos del cliente", "Who is this document for?": "¿Para quién es este documento?", "Customer or payer name": "Nombre del cliente o pagador", "Billing address": "Dirección de facturación", "Items and charges": "Artículos y cargos", "Describe the goods or services.": "Describe los bienes o servicios.", "Unit price": "Precio unitario", "Discount": "Descuento", "Tax": "Impuesto", "Additional charge": "Cargo adicional", "Charge description": "Descripción del cargo", "Payment and dates": "Pago y fechas", "Set the issue date and payment deadline.": "Establece la fecha de emisión y el plazo de pago.", "Issue date": "Fecha de emisión", "Due date": "Fecha de vencimiento", "Payment method": "Método de pago", "Payment notes": "Notas de pago", "DOCUMENT SUMMARY": "RESUMEN DEL DOCUMENTO", "Estimated total": "Total estimado", "Items": "Artículos", "Theme": "Diseño", "Total": "Total", "Amount received": "Importe recibido", "Save and preview document →": "Guardar y previsualizar →", "Before you issue it": "Antes de emitirlo", "Recent activity": "Actividad reciente", "All document types": "Todos los tipos de documento", "All statuses": "Todos los estados", "Active": "Activo", "Void": "Anulado"});
 Object.assign(UI_TRANSLATIONS.pt,{"Keep business moving.": "Mantenha o negócio em movimento.", "Create clear, professional invoices, pro forma invoices and receipts in minutes.": "Crie faturas, faturas pro forma e recibos profissionais em minutos.", "All documents": "Todos os documentos", "Saved on this device": "Guardado neste dispositivo", "Invoices": "Faturas", "Regular invoices": "Faturas normais", "Price quotations": "Orçamentos", "Payment records": "Registos de pagamento", "Recent documents": "Documentos recentes", "View all documents →": "Ver todos os documentos →", "Document type": "Tipo de documento", "Choose what you want to issue.": "Escolha o documento que pretende emitir.", "Customer details": "Dados do cliente", "Who is this document for?": "A quem se destina este documento?", "Customer or payer name": "Nome do cliente ou pagador", "Billing address": "Morada de faturação", "Items and charges": "Artigos e encargos", "Describe the goods or services.": "Descreva os bens ou serviços.", "Unit price": "Preço unitário", "Discount": "Desconto", "Tax": "Imposto", "Additional charge": "Encargo adicional", "Charge description": "Descrição do encargo", "Payment and dates": "Pagamento e datas", "Set the issue date and payment deadline.": "Defina a data de emissão e o prazo de pagamento.", "Issue date": "Data de emissão", "Due date": "Data de vencimento", "Payment method": "Método de pagamento", "Payment notes": "Notas de pagamento", "DOCUMENT SUMMARY": "RESUMO DO DOCUMENTO", "Estimated total": "Total estimado", "Items": "Artigos", "Theme": "Modelo", "Total": "Total", "Amount received": "Valor recebido", "Save and preview document →": "Guardar e pré-visualizar →", "Before you issue it": "Antes de emitir", "Recent activity": "Atividade recente", "All document types": "Todos os tipos de documento", "All statuses": "Todos os estados", "Active": "Ativo", "Void": "Anulado"});
 Object.assign(UI_TRANSLATIONS.ar,{"Keep business moving.": "حافظ على سير أعمالك.", "Create clear, professional invoices, pro forma invoices and receipts in minutes.": "أنشئ فواتير وفواتير مبدئية وإيصالات احترافية خلال دقائق.", "All documents": "جميع المستندات", "Saved on this device": "محفوظ على هذا الجهاز", "Invoices": "الفواتير", "Regular invoices": "الفواتير العادية", "Price quotations": "عروض الأسعار", "Payment records": "سجلات الدفع", "Recent documents": "المستندات الأخيرة", "View all documents →": "عرض جميع المستندات ←", "Document type": "نوع المستند", "Choose what you want to issue.": "اختر المستند الذي تريد إصداره.", "Customer details": "بيانات العميل", "Who is this document for?": "لمن هذا المستند؟", "Customer or payer name": "اسم العميل أو الدافع", "Billing address": "عنوان الفوترة", "Items and charges": "العناصر والرسوم", "Describe the goods or services.": "صف السلع أو الخدمات.", "Unit price": "سعر الوحدة", "Discount": "الخصم", "Tax": "الضريبة", "Additional charge": "رسوم إضافية", "Charge description": "وصف الرسوم", "Payment and dates": "الدفع والتواريخ", "Set the issue date and payment deadline.": "حدد تاريخ الإصدار والموعد النهائي للدفع.", "Issue date": "تاريخ الإصدار", "Due date": "تاريخ الاستحقاق", "Payment method": "طريقة الدفع", "Payment notes": "ملاحظات الدفع", "DOCUMENT SUMMARY": "ملخص المستند", "Estimated total": "الإجمالي التقديري", "Items": "العناصر", "Theme": "التصميم", "Total": "الإجمالي", "Amount received": "المبلغ المستلم", "Save and preview document →": "حفظ ومعاينة المستند ←", "Before you issue it": "قبل الإصدار", "Recent activity": "النشاط الأخير", "All document types": "جميع أنواع المستندات", "All statuses": "جميع الحالات", "Active": "نشط", "Void": "ملغى"});
+
+// Footer and support-area translations, kept separate from the larger interface dictionaries.
+Object.assign(UI_TRANSLATIONS.fr,{
+ 'Need help or have feedback?':'Besoin d’aide ou envie de donner votre avis ?',
+ 'WhatsApp feedback':'Envoyer un avis sur WhatsApp',
+ 'Email feedback':'Envoyer un avis par e-mail',
+ 'Stored on this device':'Stocké sur cet appareil',
+ 'Version 3.0.0':'Version 3.0.0',
+ 'Powered by':'Propulsé par',
+ 'Contact Invoice Gen support':'Contacter l’assistance Invoice Gen'
+});
+Object.assign(UI_TRANSLATIONS.es,{
+ 'Need help or have feedback?':'¿Necesitas ayuda o quieres enviar comentarios?',
+ 'WhatsApp feedback':'Comentarios por WhatsApp',
+ 'Email feedback':'Comentarios por correo electrónico',
+ 'Stored on this device':'Guardado en este dispositivo',
+ 'Version 3.0.0':'Versión 3.0.0',
+ 'Powered by':'Desarrollado por',
+ 'Contact Invoice Gen support':'Contactar con el soporte de Invoice Gen'
+});
+Object.assign(UI_TRANSLATIONS.pt,{
+ 'Need help or have feedback?':'Precisa de ajuda ou gostaria de enviar comentários?',
+ 'WhatsApp feedback':'Enviar comentários pelo WhatsApp',
+ 'Email feedback':'Enviar comentários por e-mail',
+ 'Stored on this device':'Guardado neste dispositivo',
+ 'Version 3.0.0':'Versão 3.0.0',
+ 'Powered by':'Desenvolvido por',
+ 'Contact Invoice Gen support':'Contactar o suporte do Invoice Gen'
+});
+Object.assign(UI_TRANSLATIONS.ar,{
+ 'Need help or have feedback?':'هل تحتاج إلى مساعدة أو ترغب في إرسال ملاحظات؟',
+ 'WhatsApp feedback':'إرسال ملاحظات عبر واتساب',
+ 'Email feedback':'إرسال ملاحظات عبر البريد الإلكتروني',
+ 'Stored on this device':'مخزّن على هذا الجهاز',
+ 'Version 3.0.0':'الإصدار 3.0.0',
+ 'Powered by':'بدعم من',
+ 'Contact Invoice Gen support':'التواصل مع دعم Invoice Gen'
+});
+
 let activeLanguage='en';
 const ORIGINAL_TEXT=new WeakMap();
 const ORIGINAL_PLACEHOLDERS=new WeakMap();
